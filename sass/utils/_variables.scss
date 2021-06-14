@@ -1,0 +1,21 @@
+// variable color
+$primary: #00adef;
+$text-primary: #fff;
+$hover-primary: #ccc;
+$active: #0088c6;
+$disabled: #4dc6f4;
+$base-color: #000;
+$link-on-base-color: #999;
+$hover-on-base-color: #999;
+$bg-on-base-color: #141414;
+// variable font-size
+$fs-0: 15px; //default
+$fs-1: 17px;
+$fs-2: 20px;
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+//break points
+$breakpoints:( 'extra-large': 1279px, 'large': 992px, 'medium': 768px, 'small': 576px, );
