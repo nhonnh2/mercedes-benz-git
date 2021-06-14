@@ -27,64 +27,72 @@
     }
     .tab-content {
         .grid__content {
-            .grid__box {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                .grid__item {
-                    overflow: hidden;
-                    border-bottom: 2px solid transparent;
-                    border-left: 1px solid transparent;
-                    border-right: 1px solid transparent;
+            .grid__item {
+                overflow: hidden;
+                border-bottom: 2px solid transparent;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;
+                height: 100%;
+                width: 33.33334%;
+                float: left;
+                position: relative;
+                &.grid-item-x4 {
+                    width: 66.6666%;
+                    &:hover {
+                        .grid__text {
+                            height: 25%;
+                        }
+                    }
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    padding-top: 56.25%;
+                }
+                .grid__img {
                     height: 100%;
                     width: 100%;
-                    position: relative;
-                    cursor: pointer;
-                    &.grid-item-x4 {
-                        grid-column: 1/3;
-                        grid-row: 1/3;
-                        &:hover {
-                            .grid__text {
-                                height: 25%;
-                            }
-                        }
-                    }
-                    .grid__img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    img {
+                        display: block;
                         height: 100%;
                         width: 100%;
-                        img {
-                            display: block;
-                            height: 100%;
-                            width: 100%;
-                            object-fit: cover;
-                        }
+                        object-fit: cover;
                     }
-                    .grid__text {
-                        position: absolute;
-                        background: rgba(0, 0, 0, .35);
-                        bottom: 0;
-                        height: 50px;
-                        left: 0;
+                }
+                .grid__text {
+                    position: absolute;
+                    background: rgba(0, 0, 0, .35);
+                    bottom: 0;
+                    height: 50px;
+                    left: 0;
+                    overflow: hidden;
+                    padding: 13px 31px 13px 31px;
+                    width: 100%;
+                    transition: height .5s, background 1.5s;
+                    color: #fff;
+                    h3 {
+                        font-size: $fs-2;
+                        font-weight: 400;
+                        line-height: 24px;
+                        transform: scaley(1.3);
+                        white-space: nowrap;
                         overflow: hidden;
-                        padding: 13px 31px 13px 31px;
-                        width: 100%;
-                        transition: height .5s, background 1.5s;
-                        h3 {
-                            font-size: $fs-2;
-                            font-weight: 400;
-                            line-height: 24px;
-                            transform: scaley(1.3);
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                        }
-                        p {
-                            line-height: 18px;
-                            margin-top: 2px;
-                            opacity: 0;
-                            transition: opacity 0.5s;
-                        }
+                        text-overflow: ellipsis;
                     }
-                    &:hover {
+                    p {
+                        line-height: 18px;
+                        margin-top: 2px;
+                        opacity: 0;
+                        transition: opacity 0.5s;
+                    }
+                }
+                &:hover {
+                    a {
+                        text-decoration: none;
                         .grid__text {
                             height: 50%;
                             background: rgba(0, 0, 0, .7);
@@ -111,6 +119,72 @@
             font-size: $fs-1;
             i {
                 margin-right: 8px;
+            }
+        }
+    }
+}
+
+@include responsive('extra-large-0') {
+    .categoriesGrid {
+        .tab-content {
+            .grid__content {
+                .grid__item {
+                    width: 50%;
+                    &:hover {
+                        .grid__text {
+                            height: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('large--1') {
+    .categoriesGrid {
+        .tab-content {
+            .grid__content {
+                .grid__item {
+                    &:hover {
+                        .grid__text {
+                            height: 66.6666%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium') {
+    .categoriesGrid {
+        .tab-content {
+            .grid__content {
+                .grid__item {
+                    height: auto;
+                    width: 100%;
+                    &::before {
+                        content: none;
+                    }
+                    .grid__img {
+                        position: relative;
+                        height: auto;
+                    }
+                    .grid__text {
+                        bottom: auto;
+                        height: auto;
+                        margin-bottom: 25px;
+                        position: static;
+                        top: auto;
+                        h3 {
+                            white-space: normal;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
