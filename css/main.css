@@ -67,6 +67,20 @@ ul {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+    .categoriesGrid .tab-content .grid__content .grid__item .grid__img i {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 50px;
+      background-color: #efefef;
+      color: #333;
+      font-size: 9px;
+      height: 25px;
+      padding: 7px 12px;
+      width: 30px;
+      z-index: 10;
+      opacity: .85;
+      transition: opacity .5s ease-out; }
   .categoriesGrid .tab-content .grid__content .grid__item .grid__text {
     position: absolute;
     background: rgba(0, 0, 0, 0.35);
@@ -100,6 +114,8 @@ ul {
         opacity: 1; }
       .categoriesGrid .tab-content .grid__content .grid__item:hover a .grid__text h3 {
         white-space: normal; }
+    .categoriesGrid .tab-content .grid__content .grid__item:hover a .grid__img i {
+      opacity: 0; }
 .categoriesGrid .tab-content button {
   display: block;
   margin: 0 auto;
@@ -130,6 +146,8 @@ ul {
     .categoriesGrid .tab-content .grid__content .grid__item .grid__img {
       position: relative;
       height: auto; }
+      .categoriesGrid .tab-content .grid__content .grid__item .grid__img i {
+        bottom: 0; }
     .categoriesGrid .tab-content .grid__content .grid__item .grid__text {
       bottom: auto;
       height: auto;

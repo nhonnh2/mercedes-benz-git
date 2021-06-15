@@ -12,4 +12,11 @@ $(document).ready(function() {
 
     handleMatchMedia(mql);
     mql.addListener(handleMatchMedia);
+
+    //categoryGrid Show More
+    $('.tab-pane .show-more').on('click', function() {
+        var selector = $(this).parent().parent();
+        selector.find('.grid-d-ad').removeClass('d-none');
+        $(this).addClass('d-none');
+    });
 })
