@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // CATEGORYGRID 
     //Add & Remove grid-item-x4 when in breakpoint
     var handleMatchMedia = function(mediaQuery) {
             if (mediaQuery.matches) {
@@ -12,11 +13,33 @@ $(document).ready(function() {
 
     handleMatchMedia(mql);
     mql.addListener(handleMatchMedia);
-
     //categoryGrid Show More
     $('.tab-pane .show-more').on('click', function() {
         var selector = $(this).parent().parent();
         selector.find('.grid-d-ad').removeClass('d-none');
         $(this).addClass('d-none');
+    });
+
+    // CTATRAP
+    //Add & Remove ctrastrap__item--hover when in breakpoint
+    var handleMatchMedia = function(mediaQuery) {
+            if (mediaQuery.matches) {
+                $('.ctrastrap__item').removeClass('ctrastrap__item--hover');
+            } else {
+                $('.ctrastrap__item').addClass('ctrastrap__item--hover');
+            }
+        },
+
+        mql = window.matchMedia('screen and (max-width: 768px)');
+
+    handleMatchMedia(mql);
+    mql.addListener(handleMatchMedia);
+    //click show list share social
+    $('.strap__share').on('click', function() {
+        if ($(this).index($('.active-list-social')) != -1) {
+            $(this).removeClass('active-list-social');
+        } else {
+            $(this).addClass('active-list-social');
+        }
     });
 })
