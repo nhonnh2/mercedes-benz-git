@@ -1,0 +1,128 @@
+        .ctastrap {
+            width: 100%;
+            position: fixed;
+            left: 100%;
+            bottom: 45%;
+            z-index: 1000;
+            transform: translate(-45px);
+            font-size: $fs-1;
+            ul {
+                .ctrastrap__item {
+                    background: #1f1f1f;
+                    margin-bottom: 1px;
+                    margin-top: 1px;
+                    cursor: pointer;
+                    transition: all 0.8s;
+                    &:first-of-type {
+                        border-top-left-radius: 3px;
+                    }
+                    &:last-of-type {
+                        border-bottom-left-radius: 3px;
+                    }
+                    &.ctrastrap__item--hover {
+                        &:hover {
+                            transform: translateX(-230px);
+                        }
+                    }
+                    .strap__link {
+                        display: block;
+                        color: white;
+                    }
+                    .strastrap__lable {
+                        vertical-align: top;
+                        line-height: 45px;
+                        margin-left: 2px;
+                    }
+                    i {
+                        display: inline-block;
+                        font-size: 22px;
+                        height: 45px;
+                        line-height: 45px;
+                        margin-right: -2px;
+                        text-align: center;
+                        width: 45px;
+                    }
+                    &.strap__share .strap__share-link {
+                        color: white;
+                        display: inline-block;
+                        transition: all, .2s;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @include responsive('large--1') {
+            .ctastrap {
+                bottom: 55%;
+            }
+        }
+        
+        @include responsive('medium') {
+            .ctastrap {
+                background: #000;
+                bottom: 0;
+                height: 60px;
+                left: 0;
+                padding: 2px 2px 0 2px;
+                transform: translate(0);
+                ul {
+                    display: flex;
+                    .ctrastrap__item {
+                        width: 33%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                        * {
+                            display: block;
+                        }
+                        i {
+                            display: block;
+                            width: auto;
+                            margin-right: 0px;
+                        }
+                        .strastrap__lable {
+                            font-size: 11px;
+                            line-height: 20px;
+                            margin-top: -8px;
+                            text-align: center;
+                            width: auto;
+                            margin-left: 0px;
+                        }
+                        .list-social {
+                            position: absolute;
+                            text-align: center;
+                            display: block;
+                            background: #1f1f1f;
+                            border-top-left-radius: 3px;
+                            border-top-right-radius: 3px;
+                            bottom: 60px;
+                            height: auto;
+                            z-index: 1000;
+                            width: 33%;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height .5s ease-in-out;
+                            .strap__share-link {
+                                display: block;
+                                margin-top: 15px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        &.active-list-social {
+                            .list-social {
+                                max-height: 404px;
+                            }
+                        }
+                    }
+                }
+            }
+        }

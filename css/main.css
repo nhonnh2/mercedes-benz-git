@@ -158,5 +158,101 @@ ul {
         white-space: normal; }
       .categoriesGrid .tab-content .grid__content .grid__item .grid__text p {
         display: none; } }
+.ctastrap {
+  width: 100%;
+  position: fixed;
+  left: 100%;
+  bottom: 45%;
+  z-index: 1000;
+  transform: translate(-45px);
+  font-size: 17px; }
+  .ctastrap ul .ctrastrap__item {
+    background: #1f1f1f;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    cursor: pointer;
+    transition: all 0.8s; }
+    .ctastrap ul .ctrastrap__item:first-of-type {
+      border-top-left-radius: 3px; }
+    .ctastrap ul .ctrastrap__item:last-of-type {
+      border-bottom-left-radius: 3px; }
+    .ctastrap ul .ctrastrap__item.ctrastrap__item--hover:hover {
+      transform: translateX(-230px); }
+    .ctastrap ul .ctrastrap__item .strap__link {
+      display: block;
+      color: white; }
+    .ctastrap ul .ctrastrap__item .strastrap__lable {
+      vertical-align: top;
+      line-height: 45px;
+      margin-left: 2px; }
+    .ctastrap ul .ctrastrap__item i {
+      display: inline-block;
+      font-size: 22px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: -2px;
+      text-align: center;
+      width: 45px; }
+    .ctastrap ul .ctrastrap__item.strap__share .strap__share-link {
+      color: white;
+      display: inline-block;
+      transition: all, .2s; }
+      .ctastrap ul .ctrastrap__item.strap__share .strap__share-link:hover {
+        color: #00adef; }
+    .ctastrap ul .ctrastrap__item a:hover {
+      text-decoration: none; }
+
+@media screen and (max-width: 1023px) {
+  .ctastrap {
+    bottom: 55%; } }
+@media screen and (max-width: 768px) {
+  .ctastrap {
+    background: #000;
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    padding: 2px 2px 0 2px;
+    transform: translate(0); }
+    .ctastrap ul {
+      display: flex; }
+      .ctastrap ul .ctrastrap__item {
+        width: 33%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        .ctastrap ul .ctrastrap__item * {
+          display: block; }
+        .ctastrap ul .ctrastrap__item i {
+          display: block;
+          width: auto;
+          margin-right: 0px; }
+        .ctastrap ul .ctrastrap__item .strastrap__lable {
+          font-size: 11px;
+          line-height: 20px;
+          margin-top: -8px;
+          text-align: center;
+          width: auto;
+          margin-left: 0px; }
+        .ctastrap ul .ctrastrap__item .list-social {
+          position: absolute;
+          text-align: center;
+          display: block;
+          background: #1f1f1f;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          bottom: 60px;
+          height: auto;
+          z-index: 1000;
+          width: 33%;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height .5s ease-in-out; }
+          .ctastrap ul .ctrastrap__item .list-social .strap__share-link {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 10px; }
+        .ctastrap ul .ctrastrap__item.active-list-social .list-social {
+          max-height: 404px; } }
 
 /*# sourceMappingURL=main.css.map */
