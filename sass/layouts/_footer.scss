@@ -1,0 +1,176 @@
+.brandhub-hr{
+    border-top: 1px solid $color-gray-7;                    
+    position: relative;
+    margin: 30px 0;
+    border: 1;
+}
+.discover{
+    margin-top: 4rem;
+    
+    .discover__infor{
+        
+        .discover__row{    
+            .discover__title{   
+                h2{
+                    font-size: 1.66rem;
+                    padding-bottom: .5rem;
+                    color: $text-primary;
+                }
+            }                
+            .discover__col{
+                .discover__item{
+                   
+                    li{
+                        list-style: none;
+                        
+                        a{
+                            text-decoration: none;
+                            color: $color-gray-7;
+                            font-family: 'Roboto', sans-serif;
+                            transition: all .5s;
+                            &:hover{
+                                color: $color-blue--theme;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .discover__media{
+            .media__header{
+                h2{
+                    font-size: 1.66rem;
+                    padding-bottom: .5rem;
+                    color: $text-primary;
+                }
+    
+                
+            }
+
+            .media__informed{
+                .media__follow{
+                    margin-bottom: 2rem;
+                    .media__content{
+                        p{
+                            color: $color-gray-7;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                    }
+    
+                    .media__icon{
+                        ul{
+                            gap: 4rem;
+
+                            li{
+                                list-style: none;
+                                a{
+                                    margin: 5px 0;  
+                                  }
+                                  
+                                  i{
+                                      font-size: $fs-3;
+                                      color: $color-gray-7;
+                                      transition: all .5s;
+                                      &:hover{
+                                          color: $color-blue--theme;
+                                      }
+                                  }
+                            }
+                            
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+
+        .discover__feature{
+            .discover__featureRow{
+                margin: 2rem 0;
+                .discover__featureCol{
+                    a{
+                        
+                        img{
+                            height: 2rem;
+                            width: 100%;
+                            margin: 2rem 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .discover__international{
+            color: $color-gray-7;
+            font-family: 'Roboto', sans-serif;
+            p{
+                a{
+                    color: $text-primary;
+                    transition: all .5s;
+                    &:hover{
+                        color: $color-blue--theme;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .discover__menu{
+            font-size: .8rem;
+            gap: 1rem;
+            a{
+                font-size: 0.9rem;
+                text-decoration: none; 
+                color: $color-gray-8;
+                transition: all 0.5s;
+                &:hover{
+                    color: $color-blue--theme;
+                }
+
+            }
+            .discover__menuRow{
+                font-family: 'Roboto', sans-serif;
+                .discover__menu-left,
+                .discover__menu-right{
+                    gap: .5rem;
+                }
+
+
+
+                .discover__menuLeft{
+                    a{
+                        padding-right: 1rem;
+                        border-right: 1px solid $color-blue--theme;
+                        font-size: 0.9rem;
+                        text-decoration: none; 
+                        color: $color-blue--theme;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $color-blue--theme-active;
+                        }
+                    }
+
+                    .english{
+                        color: $text-primary;
+                    }
+                }
+
+                .discover__icon{
+                    right: 0;
+                    @media screen and (max-width: 768px){
+                        bottom: 0;
+                        left: 48%;
+                        margin-top: 1rem;
+                    }
+            
+                }
+                
+            }
+
+        }
+    }
+}
+
