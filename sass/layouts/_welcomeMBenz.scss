@@ -1,0 +1,104 @@
+.welcomeMBenz{
+    padding: $pd-0 0;
+    color: $text-primary;
+    .welcomeMBenz__website{
+        
+        .welcomeMBenz__structure{
+            margin: 0;
+            max-width: 50%;
+            text-align: left;
+            @media screen and (max-width: 1023px){
+                max-width: 100%;
+                // display: flex;
+            }
+    
+            
+            .welcomeMBenz__left{
+                margin: 3.5rem 0;
+                .welcomeMBenz__title{
+                    
+                    h2{
+                        font-size: 1.66rem;
+                        padding-bottom: .5rem;
+                    }
+        
+    
+                }
+        
+                .welcomeMBenz__content{
+                    margin: 1rem 0;
+                    // padding-right: 1rem;
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 0.77rem;
+
+                        a{
+                            color: $color-blue--theme;
+                        }
+                    }
+                }
+        
+                .welcomeMBenz__localMarket{
+                    margin-top: $mg-2;
+                    height: 40px;
+                    width: 15rem;
+                    border: 1px solid $color-blue--theme;
+                    text-align: center;
+                    line-height: 37px;
+                    background-color: $color-blue--theme;
+                    border-radius: 2px;
+                    transition: all .5s;
+                    @media (max-width: 768px){
+                        width: auto;
+                    }
+                    &:hover{
+                        @include styleHoverButton($color-blue--theme-active, $text-primary, $color-blue--theme-active);
+                    }
+                    
+                    a{
+                        
+                        text-decoration: none;
+                        color: $text-primary;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+.brandMBenz{
+
+    .brandMBenz__picture{
+        .brandMBenz__row{
+            .brandMBenz__both{
+                .brandMBenz__img{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 0;
+                        background-color: $color-blue--theme;
+                        display: block;
+                        transition: all .5s;
+                        left: 0;
+                        bottom: 0;
+                    }
+    
+                    &:hover::after{
+                        height: 8px;
+    
+                    }
+          
+                }
+            }
+
+            
+        }
+    }
+}
+
