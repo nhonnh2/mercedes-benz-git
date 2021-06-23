@@ -1,12 +1,11 @@
-.brandhub-hr{
-    border-top: 1px solid $color-gray-7;                    
-    position: relative;
-    margin: 30px 0;
-    border: 1;
-}
 .discover{
-    margin-top: 4rem;
-    
+    .brandhub-hr{
+        border-top: 1px solid $color-gray-7;                    
+        position: relative;
+        margin: 30px 0;
+        border: 1;
+    }
+
     .discover__infor{
         
         .discover__row{    

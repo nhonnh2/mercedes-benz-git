@@ -447,15 +447,42 @@ ul {
   }
 }
 
-.brandhub-hr {
+.footNotes {
+  margin-top: 4rem;
+}
+
+.footNotes ul {
+  list-style: none;
+}
+
+.footNotes .footNotes__container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+}
+
+.footNotes .footNotes__content {
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footNotes .footNotes__content {
+    gap: 5px;
+  }
+}
+
+.footNotes .footNotes__item {
+  gap: 5px;
+}
+
+.footNotes .footNotes__item i {
+  font-size: 1.2rem;
+}
+
+.discover .brandhub-hr {
   border-top: 1px solid #999999;
   position: relative;
   margin: 30px 0;
   border: 1;
-}
-
-.discover {
-  margin-top: 4rem;
 }
 
 .discover .discover__infor .discover__row .discover__title h2 {
