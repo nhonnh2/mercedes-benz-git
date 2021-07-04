@@ -1,0 +1,22 @@
+.find-something {
+    .form-control-custom {
+        display: flex;
+        width: 100%;
+        input,
+        button {
+            height: 2.5rem;
+            border: none;
+            outline: none;
+            padding: 0 1rem;
+        }
+        input {
+            flex: auto;
+        }
+        button {
+            transition: all 0.5s;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

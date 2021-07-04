@@ -1,0 +1,71 @@
+.brandhup__carousel {
+    .carousel-control-icon {
+        background-size: 140%;
+        height: 80px;
+        &:active::before {
+            color: #00adf0 !important;
+        }
+    }
+    .carousel-item {
+        position: relative;
+        filter: grayscale(30%);
+        .brandhub__overlay {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            bottom: 10%;
+            right: 10%;
+            font-family: serif;
+            .overlay__text {
+                p {
+                    font-size: 3.5rem;
+                    line-height: 4.3rem
+                }
+            }
+            .button-secondary {
+                background-color: #333;
+                color: #f0f0f0;
+                padding: 7px 20px 6px;
+                border: 1px solid #333;
+                &:hover {
+                    background-color: #1f1f1f;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('large--1') {
+    .brandhup__carousel {
+        .carousel-item {
+            background-color: whitesmoke;
+            .brandhub__overlay {
+                position: static;
+                padding-top: 35px;
+                padding-bottom: 25px;
+                .overlay__text {
+                    p {
+                        color: black;
+                        font-size: 2.9rem;
+                        line-height: 2.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium') {
+    .brandhup__carousel {
+        .carousel-item {
+            .brandhub__overlay {
+                .overlay__text {
+                    p {
+                        font-size: 2.3rem;
+                        line-height: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
