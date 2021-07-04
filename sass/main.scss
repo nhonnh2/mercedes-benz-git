@@ -4,8 +4,8 @@
 //base
 @import './base/reset';
 @import './base/customize';
-
 //layouts
+@import './layouts/header';
 @import './layouts/welcomeMBenz';
 @import './layouts/categoryGrid';
 @import './layouts/ctastrap';

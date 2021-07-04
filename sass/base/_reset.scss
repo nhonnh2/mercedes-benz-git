@@ -8,7 +8,7 @@ html,
 body {
     background: $base-color;
     @include styleText($fs-0, $fw-normal, $text-primary);
-    font-family: 'Viaoda Libre','Roboto', Times, sans-serif;
+    font-family: 'Viaoda Libre', 'Roboto', Times, sans-serif;
 }
 
 a {

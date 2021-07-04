@@ -13,28 +13,23 @@ $color-blue--theme-active: #0088c6;
 $color-trans: transparent;
 $color-gray-7: #999999;
 $color-gray-8: #636363;
-
 // variable font-size
 $fs-0: 15px; //default
 $fs-1: 17px;
 $fs-2: 20px;
 $fs-3: 24px;
 $fs-4: 40px;
-
 //variable font-weight
 $fw-normal: normal;
 $fw-bold-0: 600;
 $fw-bold-1: 700;
 $fw-bold: bold;
-
 //variable padding
 $pd-0: 50px; //default
 $pd-1: 60px;
-
 //variable margin
 $mg-0: 2px;
 $mg-1: 10px;
 $mg-2: 40px;
-
 //break points
-$breakpoints:( 'extra-large': 1200px, 'extra-large-0': 1279px, 'large': 992px, 'large--1': 1023px, 'medium': 768px, 'small': 576px, );
+$breakpoints:( 'extra-large--1': 1440px, 'extra-large': 1200px, 'extra-large-0': 1279px, 'large': 992px, 'large--1': 1023px, 'medium': 768px, 'small': 576px, );

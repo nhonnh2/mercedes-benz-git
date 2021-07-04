@@ -42,4 +42,31 @@ $(document).ready(function() {
             $(this).addClass('active-list-social');
         }
     });
+    $('.navbar-toggler ').off('click').on('click', function() {
+        if ($('.navbar-toggler').attr("aria-expanded") == "false") {
+            $('body').css("overflow", "hidden");
+        } else {
+            $('body').css("overflow", "auto");
+        }
+    });
+
+    var handleMatchMedia = function(mediaQuery) {
+            if (!mediaQuery.matches) {
+                $('.navbar-collapse').removeClass('show');
+            }
+        },
+
+        mql = window.matchMedia('screen and (max-width: 1279px)');
+
+    handleMatchMedia(mql);
+    mql.addListener(handleMatchMedia);
+
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            $('.header__container').css("top", "-100%");
+        } else {
+            $('.header__container').css("top", "0");
+        }
+    }
 })
