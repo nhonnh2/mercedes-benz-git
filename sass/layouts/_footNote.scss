@@ -1,0 +1,25 @@
+.footNotes{
+    margin-top: 4rem;
+    ul{
+        list-style: none;
+    }
+    .footNotes__container{
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .footNotes__content{
+        gap: 1rem;
+        @media screen and (max-width: 768px){
+            gap: 5px;
+        }
+    }
+
+    .footNotes__item{
+        gap: 5px;
+
+        i{
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -447,95 +447,109 @@ header .header__container {
             margin-bottom: 10px; }
         .ctastrap ul .ctrastrap__item.active-list-social .list-social {
           max-height: 404px; } }
-.brandhub-hr {
+.footNotes {
+  margin-top: 4rem; }
+  .footNotes ul {
+    list-style: none; }
+  .footNotes .footNotes__container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem; }
+  .footNotes .footNotes__content {
+    gap: 1rem; }
+    @media screen and (max-width: 768px) {
+      .footNotes .footNotes__content {
+        gap: 5px; } }
+  .footNotes .footNotes__item {
+    gap: 5px; }
+    .footNotes .footNotes__item i {
+      font-size: 1.2rem; }
+
+.discover .brandhub-hr {
   border-top: 1px solid #999999;
   position: relative;
   margin: 30px 0;
   border: 1; }
-
-.discover {
-  margin-top: 4rem; }
-  .discover .discover__infor .discover__row .discover__title h2 {
-    font-size: 1.66rem;
-    padding-bottom: .5rem;
-    color: #fff; }
-  .discover .discover__infor .discover__row .discover__col .discover__item li {
-    list-style: none; }
-    .discover .discover__infor .discover__row .discover__col .discover__item li a {
-      text-decoration: none;
-      color: #999999;
-      font-family: 'Roboto', sans-serif;
-      transition: all .5s; }
-      .discover .discover__infor .discover__row .discover__col .discover__item li a:hover {
-        color: #00ADEF; }
-  .discover .discover__infor .discover__media .media__header h2 {
-    font-size: 1.66rem;
-    padding-bottom: .5rem;
-    color: #fff; }
-  .discover .discover__infor .discover__media .media__informed .media__follow {
-    margin-bottom: 2rem; }
-    .discover .discover__infor .discover__media .media__informed .media__follow .media__content p {
-      color: #999999;
-      font-family: 'Roboto', sans-serif; }
-    .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul {
-      gap: 4rem; }
-      .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li {
-        list-style: none; }
-        .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li a {
-          margin: 5px 0; }
-        .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li i {
-          font-size: 24px;
-          color: #999999;
-          transition: all .5s; }
-          .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li i:hover {
-            color: #00ADEF; }
-  .discover .discover__infor .discover__feature .discover__featureRow {
-    margin: 2rem 0; }
-    .discover .discover__infor .discover__feature .discover__featureRow .discover__featureCol a img {
-      height: 2rem;
-      width: 100%;
-      margin: 2rem 0; }
-  .discover .discover__infor .discover__international {
+.discover .discover__infor .discover__row .discover__title h2 {
+  font-size: 1.66rem;
+  padding-bottom: .5rem;
+  color: #fff; }
+.discover .discover__infor .discover__row .discover__col .discover__item li {
+  list-style: none; }
+  .discover .discover__infor .discover__row .discover__col .discover__item li a {
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    transition: all .5s; }
+    .discover .discover__infor .discover__row .discover__col .discover__item li a:hover {
+      color: #00ADEF; }
+.discover .discover__infor .discover__media .media__header h2 {
+  font-size: 1.66rem;
+  padding-bottom: .5rem;
+  color: #fff; }
+.discover .discover__infor .discover__media .media__informed .media__follow {
+  margin-bottom: 2rem; }
+  .discover .discover__infor .discover__media .media__informed .media__follow .media__content p {
     color: #999999;
     font-family: 'Roboto', sans-serif; }
-    .discover .discover__infor .discover__international p a {
-      color: #fff;
-      transition: all .5s; }
-      .discover .discover__infor .discover__international p a:hover {
-        color: #00ADEF;
-        text-decoration: none; }
-  .discover .discover__infor .discover__menu {
-    font-size: .8rem;
-    gap: 1rem; }
-    .discover .discover__infor .discover__menu a {
+  .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul {
+    gap: 4rem; }
+    .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li {
+      list-style: none; }
+      .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li a {
+        margin: 5px 0; }
+      .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li i {
+        font-size: 24px;
+        color: #999999;
+        transition: all .5s; }
+        .discover .discover__infor .discover__media .media__informed .media__follow .media__icon ul li i:hover {
+          color: #00ADEF; }
+.discover .discover__infor .discover__feature .discover__featureRow {
+  margin: 2rem 0; }
+  .discover .discover__infor .discover__feature .discover__featureRow .discover__featureCol a img {
+    height: 2rem;
+    width: 100%;
+    margin: 2rem 0; }
+.discover .discover__infor .discover__international {
+  color: #999999;
+  font-family: 'Roboto', sans-serif; }
+  .discover .discover__infor .discover__international p a {
+    color: #fff;
+    transition: all .5s; }
+    .discover .discover__infor .discover__international p a:hover {
+      color: #00ADEF;
+      text-decoration: none; }
+.discover .discover__infor .discover__menu {
+  font-size: .8rem;
+  gap: 1rem; }
+  .discover .discover__infor .discover__menu a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #636363;
+    transition: all 0.5s; }
+    .discover .discover__infor .discover__menu a:hover {
+      color: #00ADEF; }
+  .discover .discover__infor .discover__menu .discover__menuRow {
+    font-family: 'Roboto', sans-serif; }
+    .discover .discover__infor .discover__menu .discover__menuRow .discover__menu-left,
+    .discover .discover__infor .discover__menu .discover__menuRow .discover__menu-right {
+      gap: .5rem; }
+    .discover .discover__infor .discover__menu .discover__menuRow .discover__menuLeft a {
+      padding-right: 1rem;
+      border-right: 1px solid #00ADEF;
       font-size: 0.9rem;
       text-decoration: none;
-      color: #636363;
+      color: #00ADEF;
       transition: all 0.5s; }
-      .discover .discover__infor .discover__menu a:hover {
-        color: #00ADEF; }
-    .discover .discover__infor .discover__menu .discover__menuRow {
-      font-family: 'Roboto', sans-serif; }
-      .discover .discover__infor .discover__menu .discover__menuRow .discover__menu-left,
-      .discover .discover__infor .discover__menu .discover__menuRow .discover__menu-right {
-        gap: .5rem; }
-      .discover .discover__infor .discover__menu .discover__menuRow .discover__menuLeft a {
-        padding-right: 1rem;
-        border-right: 1px solid #00ADEF;
-        font-size: 0.9rem;
-        text-decoration: none;
-        color: #00ADEF;
-        transition: all 0.5s; }
-        .discover .discover__infor .discover__menu .discover__menuRow .discover__menuLeft a:hover {
-          color: #0088c6; }
-      .discover .discover__infor .discover__menu .discover__menuRow .discover__menuLeft .english {
-        color: #fff; }
-      .discover .discover__infor .discover__menu .discover__menuRow .discover__icon {
-        right: 0; }
-        @media screen and (max-width: 768px) {
-          .discover .discover__infor .discover__menu .discover__menuRow .discover__icon {
-            bottom: 0;
-            left: 48%;
-            margin-top: 1rem; } }
+      .discover .discover__infor .discover__menu .discover__menuRow .discover__menuLeft a:hover {
+        color: #0088c6; }
+    .discover .discover__infor .discover__menu .discover__menuRow .discover__menuLeft .english {
+      color: #fff; }
+    .discover .discover__infor .discover__menu .discover__menuRow .discover__icon {
+      right: 0; }
+      @media screen and (max-width: 768px) {
+        .discover .discover__infor .discover__menu .discover__menuRow .discover__icon {
+          bottom: 0;
+          left: 48%;
+          margin-top: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */
